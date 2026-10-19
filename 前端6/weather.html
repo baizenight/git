@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天气</title>
+  <link rel="stylesheet" href="css/weather.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>天气</h1>
+    <div class="sort">
+      <button type="button" data-sort="asc" aria-pressed="true">升序</button>
+      <button type="button" data-sort="desc" aria-pressed="false">降序</button>
+    </div>
+  </header>
+
+  <main>
+    <ul class="city-list" id="city-list"></ul>
+  </main>
+
+  <script src="js/weather.js"></script>
+</body>
+</html>
