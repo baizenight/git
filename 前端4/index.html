@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工作协调</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main id="root">
+    <header class="page-header">
+      <p class="eyebrow">JavaScript 数据整理</p>
+      <h1>工作协调</h1>
+    </header>
+
+    <section class="panel">
+      <h2>项目组成员各自的任务清单</h2>
+      <div id="member-task-container" class="card-grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>各成员可以独立完成的任务</h2>
+      <div id="independent-task-container" class="card-grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>主要配合任务</h2>
+      <div id="cooperation-task-container" class="card-grid"></div>
+    </section>
+
+    <section class="panel all-task-panel">
+      <h2>所有不同任务</h2>
+      <p id="all-task-count" class="task-count"></p>
+      <div id="all-task-container" class="tag-list"></div>
+    </section>
+  </main>
+
+  <script src="js/task-utils.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
