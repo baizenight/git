@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未祇的个人blog</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class='topbar_inner'>
+            <nav class="topbar_nav">
+                <a class="topbar_brand" href="#/">首页</a>
+                <a class="topbar_brand" href="#about">关于我</a>
+            </nav>
+
+            <button id="theme_changer" class="topbar_btn">切换主题</button>
+        </div>
+    </header>
+    <section class="intro" id="about" aria-labelledby="intro-title">
+      <div class="intro_card">
+        <div class="intro_avatar" aria-hidden="true">奶龙</div>
+
+        <div class="intro_body">
+          <h2 class="intro_title" id="intro-title">关于我</h2>
+          <p class="intro_text">
+            你好，我是奶龙，一个正在学习前端的学生。<br>
+            目前正在学习 HTML / CSS / JavaScript <br>
+            感兴趣的话请加qq：3039302576
+          </p>
+
+          <ul class="intro_tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <div class="layout">
+    <aside class="sidebar" aria-label="文章菜单">
+      <h2 class="sidebar_title">文章</h2>
+
+      <nav class="sidebar_nav">
+        <a href="#article-1" class="is-active">我是奶龙</a>
+        <a href="#article-2">我才是奶龙</a>
+        <a href="#article-3">我也是奶龙</a>
+      </nav>
+      <section class="board" aria-labelledby="board-title">
+        <h2 class="sidebar_title" id="board-title">留言板</h2>
+
+        <form class="board_form" id="board_form">
+          <label class="sr-only" for="board_name">昵称</label>
+          <input
+            class="board_input"
+            id="board_name"
+            name="name"
+            type="text"
+            maxlength="12"
+            autocomplete="nickname"
+          >
+          <br>
+          <label class="sr-only" for="board_text">留言内容</label>
+          <textarea
+            class="board_textarea"
+            id="board_text"
+            name="text"
+            rows="3"
+            maxlength="200"
+            required
+          ></textarea>
+
+          <button class="board_submit" type="submit">发布留言</button>
+        </form>
+
+        <ul class="board_list" id="board_list"></ul>
+      </section>
+    </aside>
+    <main class="content">
+      <article class="post" id="article-1">
+        <h2>我是奶龙(我才是奶龙)</h2>
+        <p>
+
+词：高森河<br>
+
+曲：隔壁老王<br>
+
+编曲：UUqingxun<br>
+
+今夜星光闪闪<br>
+
+爱你的心满满<br>
+
+你似雪花浪漫<br>
+
+又像被窝温暖<br>
+
+今夜星光闪闪<br>
+
+爱你的心满满<br>
+
+对
+
+你说声晚安<br>
+
+快上我的飞船<br>
+
+我是奶龙<br>
+
+每天晚上我都做美梦<br>
+
+梦里面飞到外太空<br>
+
+穿梭在星空<br>
+
+我是奶龙<br>
+
+粉丝见到我容易失控<br>
+
+我的特长是卖萌<br>
+
+守护美女的笑容<br>
+
+今夜星空漫漫<br>
+
+没有你好孤单<br>
+
+你有冬天浪漫<br>
+
+又像被窝温暖<br>
+
+月亮今晚加班<br>
+
+我想要降落伞<br>
+
+降落到你家说晚安<br>
+
+快上我的飞船<br>
+
+我是奶龙<br>
+
+每天晚上我都做美梦<br>
+
+梦里面飞到外太空<br>
+
+穿梭在星空<br>
+
+我是奶龙<br>
+
+粉丝见到我容易失控<br>
+
+我的特长是卖萌<br>
+
+守护美女的笑容<br>
+
+今夜星空漫漫<br>
+
+没有你好孤单<br>
+
+你有冬天浪漫<br>
+
+又像被窝温暖<br>
+
+月亮今晚加班<br>
+
+我想要降落伞<br>
+
+降落到你家说晚安<br>
+
+快上我的飞船<br>
+
+我是奶龙<br>
+
+每天晚上我都做美梦<br>
+
+梦里面飞到外太空<br>
+
+穿梭在星空<br>
+
+我是奶龙<br>
+
+粉丝见到我容易失控<br>
+
+我的特长是卖萌<br>
+
+守护美女的笑容</p>
+      </article>
+
+      <article class="post" id="article-2">
+        <h2>第二篇文章</h2>
+        <p>这里放第二篇文章的正文内容……</p>
+      </article>
+
+      <article class="post" id="article-3">
+        <h2>第三篇文章</h2>
+        <p>这里放第三篇文章的正文内容……</p>
+      </article>
+    </main>
+  </div>
+    <script src="js/theme.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/board.js"></script>
+</body>
+</html>
