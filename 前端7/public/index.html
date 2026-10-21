@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>微光前端学习资源</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">GLIMMER FRONTEND</p>
+      <h1>前端学习资源导航</h1>
+      <p class="subtitle">页面将从你亲手搭建的 Node.js API 中读取资源。</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <div>
+        <h2>推荐资源</h2>
+        <p>打开开发者工具的 Network 面板，观察页面发出的请求吧。</p>
+      </div>
+      <span id="status" class="status">正在等待数据……</span>
+    </section>
+
+    <section id="resource-list" class="resource-grid">
+      <div class="empty-card">
+        完成 <code>server.js</code> 和 <code>public/index.js</code> 中的 TODO 后，资源会显示在这里。
+      </div>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
